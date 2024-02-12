@@ -63,5 +63,7 @@ CourseProjectTests/obj/
 bin/
 obj/
 
+# Secret api key
+api_key.txt
 
 # Misc

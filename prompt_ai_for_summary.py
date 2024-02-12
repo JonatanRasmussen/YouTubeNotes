@@ -1,0 +1,270 @@
+import os
+import requests
+from openai import OpenAI
+from global_config import (
+    OPENAI_API_KEY_DESTINATION,
+)
+# import the OpenAI Python library for calling the OpenAI API
+
+def read_openai_api_key() -> str:
+    """ Read OpenAI API Key from text file that is not public on github """
+    try:
+        with open(f"{OPENAI_API_KEY_DESTINATION}", 'r', encoding='utf-8') as file:
+            for line in file:
+                return line
+    except FileNotFoundError:
+        print(f"The file {OPENAI_API_KEY_DESTINATION}.txt does not exist!")
+        return ""
+
+def chat_with_gpt(prompt):
+    print("Fetching our api key and sending the prompt, wait a few seconds for ChatGPT's response...")
+    api_key = read_openai_api_key()
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", api_key))
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt},
+        ],
+        temperature=0.7,
+    )
+    print(response.choices[0].message.content)
+    return None
+
+
+
+prompt_intro = """
+The following is a transcript from a video and I want you to summarize
+it as 6-12 bullet points so that I can copy it into my notebook.
+"""
+prompt_variable = """
+okay we're going to talk about time
+efficiency so in the mastermind chat
+here uh otter says
+weird thought i had to myself i am
+wondering if anyone else relates i spend
+a lot of resources time energy money
+into freeing up more and more time as
+well as investing those resources back
+into the stream and content and it's
+been running as a feedback loop for a
+while now i kind of feel like i'm at a
+point where a few hours a day i could
+work but my daily routines are done
+there's not really anything
+straightforward i could do so i could
+start a new product or something to
+occupy those hours but part of me is
+telling me that i need those hours to
+scroll red be unproductive or whatever
+uh is there anyone that is a hundred
+percent working all the time i feel like
+i'm getting close to that point every
+iteration of myself but the closer i get
+the more i feel like i'm doing something
+with that time will burn me up
+so um
+in my experience there's basically
+nobody that is working at 100 efficiency
+like the people that you see doing that
+are people that are like
+high-tier entrepreneurs like elon and
+like people like that that are like
+literally working on like four projects
+working like 18 hours a day who
+literally have built a tiny house in the
+tesla factory so they can spend more
+time at work
+this should not be the goal of becoming
+100 effective sorry efficient with your
+time and that you're always working is
+um
+not a good goal because you'll drive
+yourself insane and then eventually
+that'll become unrealistic this is one
+of the reasons why like twitch streamers
+are like well i could always stream more
+but streaming more is really the answer
+and i want to talk today about the
+difference which is a peter drucker
+principle this is a management principle
+found in a book called um
+the effective executive which i think is
+the best book on management ever written
+um
+and this is a concept of efficiency
+versus effectiveness
+so efficiency is what usually people
+hype up and they say okay efficiency is
+like how hard am i working um
+what amount of hours am i putting in
+what percentage efficient am i right so
+in a 100 efficient person
+means no sleep 24 hours a day
+right like working but or like you know
+maybe 100 efficient
+person
+means
+uh you work
+14 hours a day sleep six and a half uh
+everything else is
+exercise or human optimization okay
+so
+when i started my like path for personal
+development efficiency was like all i
+was concerned with and i didn't know
+there was something else um and that
+answer is effectiveness so i do not
+strive to be an efficient person at all
+anymore there's just not a thing i
+strive to be an effective person
+effectiveness means that the time you
+have to dedicate to something
+is
+like 100 effective towards the outcome
+or goal that you're trying to achieve
+okay so if your goal is to make money
+one way to do that is work
+14 hours a day at x dollars an hour
+right another way to do that is to work
+14 hours to set up a system that makes
+you 10 that makes you one dollar a day
+and then even like at right and like or
+10 a day okay like pretty big difference
+or five dollars a day right so
+if you're making 10 let's say it's 10 a
+day working 14 hours to set up a system
+that makes you ten dollars a day maybe
+it's on offer up maybe it's um service
+based maybe some kind of passive maybe
+it's a kindle book right there's all
+kinds of different things you can do
+maybe it's youtube videos you make
+passive ad revenue all kinds of things
+to think about there right but just
+reframing your mind into how can i how
+could i produce somebody does that then
+you do like 10 that's like 70 a week
+right which is an extra like 280 bucks a
+month pretty pretty clean super easy to
+do
+maybe it's um
+or maybe it's just like spending more
+time to be effective but see it's like
+making that hour more effective so once
+i realized this concept i became super
+obsessed with making things more
+effective and i did it
+i started looking at my dollar per hour
+value and realized that no matter how
+efficient you are even at like like if
+you're incredibly efficient and i put in
+10 hours of true work per day which
+isn't realistic by the way right like
+the average office worker works an hour
+and a half uh of real actual work
+there's been a lot of studies on that
+that have just like compounded that like
+real actual work one hour and a half um
+i would say even high-powered
+entrepreneurs like people that are
+really getting after it in their
+business might actually do true work
+which is like not water cooler waste of
+time phone calls meetings which get
+gather up everybody um six hours eight
+hours maybe maximum like a true eight
+hour work workday five days a week is
+insane
+that's i i know almost no one who really
+does that even top executives don't do
+that if you put in
+so i started realizing like okay let's
+take something like consulting for
+example right where i i can reliably
+consult for around 500 an hour that's
+the time value of that money
+what i i got there because i focused on
+making my time very effective so i need
+to figure out how to deliver an enormous
+amount of value right like at least five
+to ten times the amount that i'm
+charging in value that when you walk off
+that phone call you can reasonably
+expect to get that back in your roi
+and i did that by bolstering my
+knowledge on the subjects of consulting
+so well that i made that effectiveness
+work right i became much more effective
+at the use of that time not efficient
+right i didn't spend more hours doing
+something
+and and this is a core concept by by the
+way once you understand this concept
+this is why i have such a huge problem
+with streaming because streaming is an
+efficiency problem you stream more to
+become more successful but it but to be
+effective you do things like post
+youtube videos because that's an
+evergreen thing that generates more and
+more results as time goes on and and so
+effectiveness like an effective use of
+time is um doing like youtube an
+effective use of time is like meditating
+for 15 minutes a day because um
+meditation actually creates time
+this is like a crazy concept right like
+you you think you have 14 24 hours in
+the day but meditating organizes your
+mind in such a way that you become more
+effective so you can work in a more
+effective way you can target goals more
+effectively you can you can plan things
+at outcomes that result in the more pure
+version of that outcome so you may be
+saving two hours a day by meditating 30
+minutes a day
+and and you should think through that if
+that doesn't make sense to you so
+effectiveness is something that you
+should always focus on um
+so in mastermind chat it was recommended
+like okay well maybe take some time to
+like do exercise or eat well or things
+like that these are all effective things
+that you can do to um
+to to improve your life and have these
+exponential results but you shouldn't be
+thinking in terms of
+like the optimal person is not a person
+who works all the time and um spends all
+and then like all the time they're not
+working is like perfect human efficiency
+right um
+that's just not the way to be human the
+the optimal human is a person who is
+incredibly effective with the time that
+they have dedicated towards those those
+those things so if you are in the gym
+you're not like just sitting around on
+your phone which you see a bazillion
+people doing you know they're they're
+literally just sitting on a on like a
+workout machine and they're on their
+phone right they're resting they're in
+the resting period no you're like
+getting after it the entire time you're
+focusing you're you're you're in and
+then you weave and like the total
+effective time that you spent was maybe
+45 minutes but you got way more done in
+that time than somebody who spent three
+hours at the gym you got to look at that
+with everything with your career um
+effectiveness versus efficiency i think
+is the best answer to this question all
+right
+"""
+prompt_full = prompt_intro + prompt_variable
+chat_with_gpt(prompt_full)

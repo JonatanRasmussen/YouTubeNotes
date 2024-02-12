@@ -7,6 +7,7 @@ VIDEO_UNAVAILABLE = "Error: This video is no longer available."
 TOPLEVEL_FOLDER = "data"
 FILENAME_VIDEOS = "videos.txt"
 FOLDERNAME_TRANSCRIPTS = "transcripts"
+OPENAI_API_KEY_DESTINATION = "api_key.txt"
 
 
 
