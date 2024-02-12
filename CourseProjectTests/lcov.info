@@ -1,0 +1,217 @@
+SF:C:\Users\BudoB\OneDrive\Dokumenter Tekst\Programmering\gcd\CourseProjectCSharp\src\Creature.cs
+FN:6,System.String GlobalNameSpace.Creature::get_Name()
+FNDA:0,System.String GlobalNameSpace.Creature::get_Name()
+DA:7,0
+FN:8,System.Void GlobalNameSpace.Creature::.ctor()
+FNDA:0,System.Void GlobalNameSpace.Creature::.ctor()
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+LF:5
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:C:\Users\BudoB\OneDrive\Dokumenter Tekst\Programmering\gcd\CourseProjectCSharp\src\GameLoop.cs
+FN:6,System.Int32 GlobalNameSpace.GameLoop::get_CurrentTurn()
+FNDA:0,System.Int32 GlobalNameSpace.GameLoop::get_CurrentTurn()
+DA:7,0
+FN:7,GlobalNameSpace.Level GlobalNameSpace.GameLoop::get_Level()
+FNDA:0,GlobalNameSpace.Level GlobalNameSpace.GameLoop::get_Level()
+DA:8,0
+FN:8,System.Boolean GlobalNameSpace.GameLoop::get_LevelWon()
+FNDA:0,System.Boolean GlobalNameSpace.GameLoop::get_LevelWon()
+DA:9,0
+FN:9,System.Boolean GlobalNameSpace.GameLoop::get_LevelLost()
+FNDA:0,System.Boolean GlobalNameSpace.GameLoop::get_LevelLost()
+DA:10,0
+FN:20,System.Void GlobalNameSpace.GameLoop::EnterGameLoop()
+FNDA:0,System.Void GlobalNameSpace.GameLoop::EnterGameLoop()
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+BRDA:22,34,1,0
+BRDA:22,18,0,0
+BRDA:22,18,1,0
+BRDA:22,34,0,0
+FN:28,System.Void GlobalNameSpace.GameLoop::TakeTurn()
+FNDA:0,System.Void GlobalNameSpace.GameLoop::TakeTurn()
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+FN:34,System.Void GlobalNameSpace.GameLoop::PromptPlayerAction()
+FNDA:0,System.Void GlobalNameSpace.GameLoop::PromptPlayerAction()
+DA:35,0
+DA:37,0
+FN:11,System.Void GlobalNameSpace.GameLoop::.ctor(GlobalNameSpace.Level)
+FNDA:0,System.Void GlobalNameSpace.GameLoop::.ctor(GlobalNameSpace.Level)
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+LF:23
+LH:0
+BRF:4
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:C:\Users\BudoB\OneDrive\Dokumenter Tekst\Programmering\gcd\CourseProjectCSharp\src\Level.cs
+FN:6,System.Collections.Generic.List`1<GlobalNameSpace.Creature> GlobalNameSpace.Level::get_Creatures()
+FNDA:0,System.Collections.Generic.List`1<GlobalNameSpace.Creature> GlobalNameSpace.Level::get_Creatures()
+DA:7,0
+FN:14,GlobalNameSpace.Level GlobalNameSpace.Level::CreateEmpty()
+FNDA:0,GlobalNameSpace.Level GlobalNameSpace.Level::CreateEmpty()
+DA:15,0
+DA:16,0
+DA:17,0
+FN:8,System.Void GlobalNameSpace.Level::.ctor()
+FNDA:0,System.Void GlobalNameSpace.Level::.ctor()
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:C:\Users\BudoB\OneDrive\Dokumenter Tekst\Programmering\gcd\CourseProjectCSharp\src\LevelPicker.cs
+FN:6,System.Int32 GlobalNameSpace.LevelPicker::get_CurrentLevelIndex()
+FNDA:0,System.Int32 GlobalNameSpace.LevelPicker::get_CurrentLevelIndex()
+DA:7,0
+FN:7,System.Int32 GlobalNameSpace.LevelPicker::get_InitialLevelIndex()
+FNDA:0,System.Int32 GlobalNameSpace.LevelPicker::get_InitialLevelIndex()
+DA:8,0
+FN:8,System.Collections.Generic.List`1<GlobalNameSpace.Level> GlobalNameSpace.LevelPicker::get_Levels()
+FNDA:0,System.Collections.Generic.List`1<GlobalNameSpace.Level> GlobalNameSpace.LevelPicker::get_Levels()
+DA:9,0
+FN:18,GlobalNameSpace.Level GlobalNameSpace.LevelPicker::LoadLevel()
+FNDA:0,GlobalNameSpace.Level GlobalNameSpace.LevelPicker::LoadLevel()
+DA:19,0
+DA:20,0
+DA:21,0
+FN:23,System.Void GlobalNameSpace.LevelPicker::ProceedToNextLevel()
+FNDA:0,System.Void GlobalNameSpace.LevelPicker::ProceedToNextLevel()
+DA:24,0
+DA:25,0
+DA:26,0
+FN:28,System.Void GlobalNameSpace.LevelPicker::ResetToInitialLevel()
+FNDA:0,System.Void GlobalNameSpace.LevelPicker::ResetToInitialLevel()
+DA:29,0
+DA:30,0
+DA:31,0
+FN:33,GlobalNameSpace.Level GlobalNameSpace.LevelPicker::CreateEmpty()
+FNDA:0,GlobalNameSpace.Level GlobalNameSpace.LevelPicker::CreateEmpty()
+DA:34,0
+DA:35,0
+DA:36,0
+FN:38,System.Collections.Generic.List`1<GlobalNameSpace.Level> GlobalNameSpace.LevelPicker::InitializeLevels()
+FNDA:0,System.Collections.Generic.List`1<GlobalNameSpace.Level> GlobalNameSpace.LevelPicker::InitializeLevels()
+DA:39,0
+DA:40,0
+DA:41,0
+FN:10,System.Void GlobalNameSpace.LevelPicker::.ctor()
+FNDA:0,System.Void GlobalNameSpace.LevelPicker::.ctor()
+DA:11,0
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+LF:24
+LH:0
+BRF:0
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:C:\Users\BudoB\OneDrive\Dokumenter Tekst\Programmering\gcd\CourseProjectCSharp\src\Main.cs
+FN:11,System.Int32 GlobalNameSpace.Program::AddNumbers(System.Int32,System.Int32)
+FNDA:1,System.Int32 GlobalNameSpace.Program::AddNumbers(System.Int32,System.Int32)
+DA:12,1
+DA:13,1
+DA:14,1
+FN:16,System.Void GlobalNameSpace.Program::Main(System.String[])
+FNDA:0,System.Void GlobalNameSpace.Program::Main(System.String[])
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+LF:8
+LH:3
+BRF:0
+BRH:0
+FNF:2
+FNH:1
+end_of_record
+SF:C:\Users\BudoB\OneDrive\Dokumenter Tekst\Programmering\gcd\CourseProjectCSharp\src\NewGame.cs
+FN:7,GlobalNameSpace.LevelPicker GlobalNameSpace.NewGame::get_LevelPicker()
+FNDA:0,GlobalNameSpace.LevelPicker GlobalNameSpace.NewGame::get_LevelPicker()
+DA:8,0
+FN:8,GlobalNameSpace.Level GlobalNameSpace.NewGame::get_CurrentLevel()
+FNDA:0,GlobalNameSpace.Level GlobalNameSpace.NewGame::get_CurrentLevel()
+DA:9,0
+FN:9,System.Int32 GlobalNameSpace.NewGame::get_PlayerScore()
+FNDA:0,System.Int32 GlobalNameSpace.NewGame::get_PlayerScore()
+DA:10,0
+FN:10,System.Boolean GlobalNameSpace.NewGame::get_GameOver()
+FNDA:0,System.Boolean GlobalNameSpace.NewGame::get_GameOver()
+DA:11,0
+FN:19,System.Void GlobalNameSpace.NewGame::PlayGame()
+FNDA:0,System.Void GlobalNameSpace.NewGame::PlayGame()
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+BRDA:21,132,1,0
+BRDA:26,49,0,0
+BRDA:26,49,1,0
+BRDA:31,93,0,0
+BRDA:31,93,1,0
+BRDA:21,132,0,0
+FN:11,System.Void GlobalNameSpace.NewGame::.ctor()
+FNDA:0,System.Void GlobalNameSpace.NewGame::.ctor()
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+LF:31
+LH:0
+BRF:6
+BRH:0
+FNF:6
+FNH:0
+end_of_record
