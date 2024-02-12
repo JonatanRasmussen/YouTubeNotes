@@ -5,7 +5,7 @@ VIDEO_UNAVAILABLE = "Error: This video is no longer available."
 
 # STATIC_FOLDERS
 TOPLEVEL_FOLDER = "data"
-FILENAME_VIDEOS = "videos"
+FILENAME_VIDEOS = "videos.txt"
 FOLDERNAME_TRANSCRIPTS = "transcripts"
 
 

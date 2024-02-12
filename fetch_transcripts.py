@@ -59,7 +59,8 @@ def get_list_of_subtitles(video_url_or_id: str) -> list[str]:
 
 
 def write_subtitles_as_file(filepath: str, subtitles: list[str]) -> None:
-    with open(filepath, 'w', encoding='utf-8') as file:
+    """ Create a text file where each line is a subtitle from the subtitles list """
+    with open(f"{filepath}.txt", 'w', encoding='utf-8') as file:
         for subtitle in subtitles:
             file.write(subtitle + '\n')
 
@@ -67,7 +68,8 @@ def write_subtitles_as_file(filepath: str, subtitles: list[str]) -> None:
 def read_lines_from_file(filepath: str) -> list[str]:
     """ Read a file with a youtube_url or video_id
         on each line and return them as a list of strings.
-        Please NOTE that empty lines and lines starting with # are ignored """
+        Please NOTE that empty lines and lines starting with # are ignored
+        If two or more videos in the list are identical, print a warning in console """
     lines = []
     try:
         with open(f"{filepath}/{FILENAME_VIDEOS}", 'r', encoding='utf-8') as file:
@@ -76,28 +78,47 @@ def read_lines_from_file(filepath: str) -> list[str]:
                     lines.append(line.strip())
     except FileNotFoundError:
         print(f"The file {filepath}.txt does not exist!")
+    if contains_identical_videos(lines):
+        print("Warning: Two or more videos in the list are identical!")
     return lines
 
 
-def execute(filepath: str) -> None:
-    unavailable_video_ids = []
-    youtube_urls_or_video_ids = read_lines_from_file(filepath)
-    number_of_videos = len(youtube_urls_or_video_ids)
-    i = 0
-    for element in youtube_urls_or_video_ids:
-        video_id = parse_out_video_id_if_in_url_format(element)
-        output_destination = f"{filepath}/{FOLDERNAME_TRANSCRIPTS}/{video_id}"
-        subtitles = get_list_of_subtitles(video_id)
-        if len(subtitles) == 0 or subtitles[0] == VIDEO_UNAVAILABLE:
-            unavailable_video_ids.append(video_id)
-        write_subtitles_as_file(output_destination, subtitles)
-        i = i+1
-        print(f"{i} of {number_of_videos}: Transcript of video_id '{video_id}' saved to {filepath}")
+def contains_identical_videos(lst):
+    """ Returns true if two or more videos are identical.
+        If not, returns false. Has time complexity of O(n^2) """
+    n = len(lst)
+    for i in range(n):
+        for k in range(i + 1, n):
+            video_i = parse_out_video_id_if_in_url_format(lst[i])
+            video_k = parse_out_video_id_if_in_url_format(lst[k])
+            if video_i == video_k:
+                return True
+    return False
 
-    for video in unavailable_video_ids:
-        print(f"The video with video_id {video} received: {VIDEO_UNAVAILABLE}")
-    print()
-    print(f"Done! {number_of_videos} transcripts fetched and saved.")
+
+def build_transcript_dict(videos: list[str]) -> dict[str,list[str]]:
+    """ Takes a list of video urls or ids and returns a dict containing
+        the video_id and a list of its subtitles as the key/value pair """
+    transcript_dict = {}
+    for i, video in enumerate(videos):
+        video_id = parse_out_video_id_if_in_url_format(video)
+        subtitles = get_list_of_subtitles(video_id)
+        transcript_dict[video_id] = subtitles
+        print(f"{i+1} of {len(videos)}: Transcript of video_id '{video_id}' fetched.")
+    return transcript_dict
+
+
+def execute(filepath: str) -> None:
+    """ Reads list of videos from specified file, then fetches the transcript for each video
+        and writes its subtitles to disk as a new file with the video_id as the file name """
+    videos = read_lines_from_file(filepath)
+    transcript_dict = build_transcript_dict(videos)
+    for video_id, subtitles in transcript_dict:
+        output_destination = f"{filepath}/{FOLDERNAME_TRANSCRIPTS}/{video_id}"
+        write_subtitles_as_file(output_destination, subtitles)
+        if VIDEO_UNAVAILABLE in subtitles:
+            print("\n"+f"The video with video_id {video_id} received: {VIDEO_UNAVAILABLE}")
+    print("\n"+f"Done! {len(videos)} transcripts successfully fetched and saved!")
 
 
 if __name__ == "__main__":
