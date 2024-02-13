@@ -1,3 +1,5 @@
+# This file is global_config.py
+
 import os
 
 # Error messagse
@@ -7,6 +9,8 @@ VIDEO_UNAVAILABLE = "Error: This video is no longer available."
 TOPLEVEL_FOLDER = "data"
 FILENAME_VIDEOS = "videos.txt"
 FOLDERNAME_TRANSCRIPTS = "transcripts"
+FOLDERNAME_AI_SUMMARIES = "ai_summaries"
+FOLDERNAME_NOTES = "notes"
 OPENAI_API_KEY_DESTINATION = "api_key.txt"
 
 
@@ -20,20 +24,8 @@ MY_FILEPATH = devin_nash_patreon
 GLOBALLY_CONFIGURED_FILEPATH = f"{TOPLEVEL_FOLDER}/{MY_FILEPATH}"
 
 
-def initialize_directory():
-    create_directory()
-    create_transcripts_subfolder()
 
-
-def create_directory():
-    """ Create folder for 'MY_FILEPATH' if it does not exist """
-    directory = os.path.dirname(GLOBALLY_CONFIGURED_FILEPATH)
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-def create_transcripts_subfolder():
-    """ Create transcripts subfolder inside 'MY_FILEPATH' """
-    create_directory()
-    transcripts_subfolder = f"{GLOBALLY_CONFIGURED_FILEPATH}/{FOLDERNAME_TRANSCRIPTS}"
-    if not os.path.exists(transcripts_subfolder):
-        os.makedirs(transcripts_subfolder)
+notes_name_devin_nash_patreon = "Devin Nash"
+FILEPATH_MAPPING = {devin_nash_patreon: notes_name_devin_nash_patreon,
+                    'test_key': 'test_value',
+                    }

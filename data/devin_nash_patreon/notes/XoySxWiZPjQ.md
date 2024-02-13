@@ -1,0 +1,18 @@
+[[Devin Nash]]
+https://www.youtube.com/watch?v=XoySxWiZPjQ
+
+**Video Title:** Free vs Paid Marketing Funnels Explained
+
+**Key Topics:** Funnel concept, top of funnel resources, bottom of funnel strategies, building trust and equity, monetization models
+- A funnel represents the journey a customer takes from initial contact to purchase
+- Top of funnel resources should be easily accessible, such as YouTube ads, word of mouth, review sites, and social media
+- YouTube is highlighted as a top choice for funnel marketing due to its effectiveness
+- Paid ads can still drive users to free funnels, but competition and saturation pose challenges
+- Bottom of funnel strategies include offering products, courses, services, or subscriptions like Patreon
+- Building trust is crucial, starting with providing high-value content at the top of the funnel
+- Utilizing free funnels like YouTube can also lead to monetization opportunities
+- Paid funnels must offer 5 to 10 times the value of what customers pay for to maintain trust and retention
+- Consistency in value delivery is key to preventing loss of trust and reputation damage
+- The importance of creating multiple free funnels and converting them into a single paid funnel for revenue generation
+- Building trust and equity with customers is essential before introducing paid offerings
+- Patience and focus on value creation are crucial for successful funnel marketing strategies

@@ -1,0 +1,17 @@
+[[Devin Nash]]
+https://www.youtube.com/watch?v=S-njZ2tmQsI
+
+**Video Title:** Understanding the Shift in Marketing Strategies
+
+**Key Topics:** Titling, SEO, YouTube marketing, Content optimization, Creative marketing
+- SEO and optimizing for search is being phased out
+- Paid advertising still requires keyword optimization
+- Marketing strategies are shifting towards creative and experience-based approaches
+- Successful channels like Ludwig and 39 Daff focus on unique titles that attract viewers
+- Titles and thumbnails play a crucial role in directing audience interest
+- Directing marketing efforts towards individual interests rather than algorithms
+- Example of successful video titles that tell a story and engage viewers
+- Experience-based marketing focuses on building a narrative and engaging story
+- The importance of creative and direct storytelling in modern marketing strategies
+- The shift from algorithm-focused marketing to audience-focused marketing
+- Emphasizing the power of interesting and engaging content in reaching the right audience
