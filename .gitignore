@@ -65,5 +65,5 @@ obj/
 
 # Secret api key
 api_key.txt
-
+data/*/browsing_history
 # Misc
