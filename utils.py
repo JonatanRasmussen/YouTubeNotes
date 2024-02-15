@@ -3,6 +3,7 @@ import os
 import re
 
 from global_config import (
+    FILENAME_BROWSING_HISTORY_COPY,
     FILENAME_VIDEOS,
     FOLDERNAME_TRANSCRIPTS,
     FOLDERNAME_AI_SUMMARIES,
@@ -27,6 +28,10 @@ def construct_ai_summaries_output_file_destination(filepath: str, video_id: str)
 
 def construct_final_notes_output_file_destination(filepath: str, video_id: str) -> str:
     return f"{filepath}/{FOLDERNAME_NOTES}/{video_id}.md"
+
+
+def construct_history_copied_full_file_path(filepath: str) -> str:
+    return os.path.join(os.getcwd(), f"{filepath}/{FILENAME_BROWSING_HISTORY_COPY}")
 
 
 def get_filepath_with_toplevel_folder_removed(filepath: str) -> str:
