@@ -7,7 +7,7 @@ VIDEO_UNAVAILABLE = "Error: This video is no longer available."
 
 # STATIC_FOLDERS
 TOPLEVEL_FOLDER = "data"
-FILENAME_BROWSING_HISTORY_COPY = "browsing_history_copy"
+FILENAME_BROWSING_HISTORY_COPY = "browsing_history"
 FILENAME_VIDEOS = "videos.txt"
 FOLDERNAME_TRANSCRIPTS = "transcripts"
 FOLDERNAME_AI_SUMMARIES = "ai_summaries"
