@@ -63,8 +63,9 @@ CourseProjectTests/obj/
 bin/
 obj/
 
-# Secret api key
+# Secret api key and stuff
 api_key.txt
 browsing_history_destination.txt
+browsing_history
 data/*/browsing_history
 # Misc
