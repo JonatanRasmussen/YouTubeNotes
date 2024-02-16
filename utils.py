@@ -3,13 +3,14 @@ import os
 import re
 
 from global_config import (
-    FILENAME_BROWSING_HISTORY_COPY,
+    FILENAME_COPY_OF_BROWSING_HISTORY,
     FILENAME_VIDEOS,
     FOLDERNAME_TRANSCRIPTS,
     FOLDERNAME_AI_SUMMARIES,
     FOLDERNAME_NOTES,
     TOPLEVEL_FOLDER,
     FILEPATH_MAPPING,
+    FILE_CONTAINING_OPENAI_API_KEY,
     GLOBALLY_CONFIGURED_FILEPATH,
 )
 
@@ -30,8 +31,8 @@ def construct_final_notes_output_file_destination(filepath: str, video_id: str) 
     return f"{filepath}/{FOLDERNAME_NOTES}/{video_id}.md"
 
 
-def construct_history_copied_full_file_path(filepath: str) -> str:
-    return os.path.join(os.getcwd(), f"{filepath}/{FILENAME_BROWSING_HISTORY_COPY}")
+def construct_full_file_path_for_browsing_history_copy() -> str:
+    return os.path.join(os.getcwd(), FILENAME_COPY_OF_BROWSING_HISTORY)
 
 
 def get_filepath_with_toplevel_folder_removed(filepath: str) -> str:
@@ -70,6 +71,12 @@ def contains_identical_videos(lst):
     return False
 
 
+def read_single_line_from_file(file_destination: str) -> str:
+    lines = read_lines_from_file(file_destination)
+    if len(lines) != 1:
+        print(f"Warning: {file_destination} contains more than a single line!")
+    return ' '.join(lines)
+
 def read_lines_from_file(file_destination: str) -> list[str]:
     """ Read a file with a youtube_url or video_id
         on each line and return them as a list of strings.
@@ -82,7 +89,11 @@ def read_lines_from_file(file_destination: str) -> list[str]:
                 lines.append(line.strip())
     except FileNotFoundError:
         print(f"File destination {file_destination} does not exist!")
-    return lines
+    # Check if all elements in the list are empty strings
+    if all(element == "" for element in lines):
+        return []  # Return an empty list if all elements are empty strings
+    else:
+        return lines  # Return the list of non-empty strings
 
 
 def remove_empty_lines_and_comments(lines: list[str]) -> list[str]:

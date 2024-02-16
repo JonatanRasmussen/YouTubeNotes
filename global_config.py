@@ -7,13 +7,13 @@ VIDEO_UNAVAILABLE = "Error: This video is no longer available."
 
 # STATIC_FOLDERS
 TOPLEVEL_FOLDER = "data"
-FILENAME_BROWSING_HISTORY_COPY = "browsing_history"
 FILENAME_VIDEOS = "videos.txt"
 FOLDERNAME_TRANSCRIPTS = "transcripts"
 FOLDERNAME_AI_SUMMARIES = "ai_summaries"
 FOLDERNAME_NOTES = "notes"
-OPENAI_API_KEY_DESTINATION = "api_key.txt"
-
+FILE_CONTAINING_OPENAI_API_KEY = "api_key.txt"
+FILENAME_COPY_OF_BROWSING_HISTORY = "browsing_history"
+FILE_CONTAINING_BROWSING_HISTORY_DIRECTORY = "browsing_history_destination.txt"
 
 
 # (Step 1 of 2) Choose one

@@ -4,7 +4,7 @@ import os
 from openai import OpenAI
 from global_config import (
     GLOBALLY_CONFIGURED_FILEPATH,
-    OPENAI_API_KEY_DESTINATION,
+    FILE_CONTAINING_OPENAI_API_KEY,
 )
 from utils import (
     initialize_directory,
@@ -22,12 +22,22 @@ from utils import (
 def read_openai_api_key() -> str:
     """ Read OpenAI API Key from text file that is not public on github """
     try:
-        with open(f"{OPENAI_API_KEY_DESTINATION}", 'r', encoding='utf-8') as file:
+        with open(f"{FILE_CONTAINING_OPENAI_API_KEY}", 'r', encoding='utf-8') as file:
             for line in file:
                 return line
     except FileNotFoundError:
-        print(f"The file {OPENAI_API_KEY_DESTINATION}.txt does not exist!")
-        return ""
+        return "" #Error
+
+
+def api_key_exists() -> bool:
+    if os.path.exists(FILE_CONTAINING_OPENAI_API_KEY):
+        return True
+    print(f"The file {FILE_CONTAINING_OPENAI_API_KEY} did not exist!")
+    print(f"An empty file {FILE_CONTAINING_OPENAI_API_KEY} has been generated for you.")
+    print(f"Go to OpenAI's website, get an API key and insert it in {FILE_CONTAINING_OPENAI_API_KEY}")
+    with open(FILE_CONTAINING_OPENAI_API_KEY, 'w', encoding='utf-8') as file:
+        file.write("")
+    return False
 
 
 def estimate_prompt_token_length(prompt: str) -> float:
@@ -125,7 +135,7 @@ def generate_ai_summary(filepath: str, video_url_or_id: str) -> None:
         and writes its subtitles to disk as a new file with the video_id as the file name """
     video_id = parse_out_video_id_if_in_url_format(video_url_or_id)
     output_destination = construct_ai_summaries_output_file_destination(filepath, video_id)
-    if video_exists(filepath, video_url_or_id):
+    if video_exists(filepath, video_url_or_id) and api_key_exists():
         if not file_exists(output_destination):
             summary_bullet_points = generate_bullet_points(filepath, video_id)
             write_list_as_file(output_destination, summary_bullet_points)
@@ -136,5 +146,5 @@ def generate_ai_summary(filepath: str, video_url_or_id: str) -> None:
 if __name__ == "__main__":
     initialize_directory()
     my_filepath = GLOBALLY_CONFIGURED_FILEPATH
-    my_video_url_or_id = "Krz-WX82gHo"
+    my_video_url_or_id = "eiTgnbSyIG0"
     generate_ai_summary(my_filepath, my_video_url_or_id)
