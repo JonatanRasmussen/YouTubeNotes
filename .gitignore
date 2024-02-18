@@ -10,6 +10,9 @@
 *.userosscache
 *.sln.docstates
 
+# Python cache
+__pycache__/
+
 # User-specific files (Mono Auto Generated)
 mono_crash.*
 
