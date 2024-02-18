@@ -3,8 +3,8 @@ import os
 import sqlite3
 from datetime import datetime
 
-from global_config import (
-    GLOBALLY_CONFIGURED_FILEPATH,
+from configs import (
+    CURRENTLY_SELECTED_SUBFOLDER,
     FILE_CONTAINING_BROWSING_HISTORY_DIRECTORY,
 )
 from utils import (
@@ -12,6 +12,8 @@ from utils import (
     read_lines_from_file,
     read_single_line_from_file,
     initialize_directory,
+    construct_video_input_file_destination,
+    write_list_as_file,
 )
 
 
@@ -68,17 +70,20 @@ def query_browsing_history_db_for_latest_video() -> list[str]:
     return []
 
 
-def fetch_latest_url(filepath: str) -> None:
+def fetch_latest_url(filepath: str) -> list[str]:
     """ Reads your browsing history and finds your most recently watched YouTube video """
     latest_video_details = query_browsing_history_db_for_latest_video()
-    if len(latest_video_details) == 0:
-        print("error")
-    else:
+    if len(latest_video_details) != 0:
+        my_list = [latest_video_details[0], f"# {latest_video_details[1]}"]
         print("URL:", latest_video_details[0])
         print("Title:", latest_video_details[1])
+        output_destination = construct_video_input_file_destination(filepath)
+        write_list_as_file(output_destination, my_list)
+        return [latest_video_details[0], latest_video_details[1]]
+    return []
 
 
 if __name__ == "__main__":
     initialize_directory()
-    my_filepath = GLOBALLY_CONFIGURED_FILEPATH
+    my_filepath = CURRENTLY_SELECTED_SUBFOLDER
     fetch_latest_url(my_filepath)

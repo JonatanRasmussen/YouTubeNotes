@@ -1,18 +1,17 @@
 # This file is generate_ai_summary.py
+# pip install openai
 
 import os
 from openai import OpenAI
-from global_config import (
-    GLOBALLY_CONFIGURED_FILEPATH,
+from configs import (
+    CURRENTLY_SELECTED_SUBFOLDER,
     FILE_CONTAINING_OPENAI_API_KEY,
 )
 from utils import (
     initialize_directory,
-    construct_video_input_file_destination,
     construct_transcript_output_file_destination,
     read_lines_from_file,
-    read_video_ids_from_default_file,
-    parse_out_video_id_if_in_url_format,
+    parse_out_video_id_if_its_in_url_format,
     construct_ai_summaries_output_file_destination,
     write_list_as_file,
     video_exists,
@@ -133,7 +132,7 @@ def generate_bullet_points(filepath: str, video_id: str) -> list[str]:
 def generate_ai_summary(filepath: str, video_url_or_id: str) -> None:
     """ Reads list of videos from specified file, then fetches the transcript for each video
         and writes its subtitles to disk as a new file with the video_id as the file name """
-    video_id = parse_out_video_id_if_in_url_format(video_url_or_id)
+    video_id = parse_out_video_id_if_its_in_url_format(video_url_or_id)
     output_destination = construct_ai_summaries_output_file_destination(filepath, video_id)
     if video_exists(filepath, video_url_or_id) and api_key_exists():
         if not file_exists(output_destination):
@@ -145,6 +144,6 @@ def generate_ai_summary(filepath: str, video_url_or_id: str) -> None:
 
 if __name__ == "__main__":
     initialize_directory()
-    my_filepath = GLOBALLY_CONFIGURED_FILEPATH
+    my_filepath = CURRENTLY_SELECTED_SUBFOLDER
     my_video_url_or_id = "eiTgnbSyIG0"
     generate_ai_summary(my_filepath, my_video_url_or_id)

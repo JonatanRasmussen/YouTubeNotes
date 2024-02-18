@@ -3,8 +3,8 @@
 # pip install youtube-transcript-api
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import VideoUnavailable
-from global_config import (
-    GLOBALLY_CONFIGURED_FILEPATH,
+from configs import (
+    CURRENTLY_SELECTED_SUBFOLDER,
     VIDEO_UNAVAILABLE,
 )
 from utils import (
@@ -12,7 +12,7 @@ from utils import (
     read_video_ids_from_default_file,
     write_list_as_file,
     construct_transcript_output_file_destination,
-    parse_out_video_id_if_in_url_format,
+    parse_out_video_id_if_its_in_url_format,
     video_exists,
     file_exists,
 )
@@ -77,7 +77,7 @@ def fetch_transcript_for_all(filepath: str) -> None:
 
 def fetch_transcript(filepath: str, video_url_or_id: str) -> None:
     if video_exists(filepath, video_url_or_id):
-        video_id = parse_out_video_id_if_in_url_format(video_url_or_id)
+        video_id = parse_out_video_id_if_its_in_url_format(video_url_or_id)
         output_destination = construct_transcript_output_file_destination(filepath, video_id)
         if not file_exists(output_destination):
             subtitles = obtain_subtitles_via_transcript_object(video_id)
@@ -91,5 +91,5 @@ def fetch_transcript(filepath: str, video_url_or_id: str) -> None:
 
 if __name__ == "__main__":
     initialize_directory()
-    my_filepath = GLOBALLY_CONFIGURED_FILEPATH
+    my_filepath = CURRENTLY_SELECTED_SUBFOLDER
     fetch_transcript_for_all(my_filepath)

@@ -2,7 +2,7 @@
 import os
 import re
 
-from global_config import (
+from configs import (
     FILENAME_COPY_OF_BROWSING_HISTORY,
     FILENAME_VIDEOS,
     FOLDERNAME_TRANSCRIPTS,
@@ -11,7 +11,7 @@ from global_config import (
     TOPLEVEL_FOLDER,
     FILEPATH_MAPPING,
     FILE_CONTAINING_OPENAI_API_KEY,
-    GLOBALLY_CONFIGURED_FILEPATH,
+    CURRENTLY_SELECTED_SUBFOLDER,
 )
 
 
@@ -32,14 +32,18 @@ def construct_final_notes_output_file_destination(filepath: str, video_id: str) 
 
 
 def construct_full_file_path_for_browsing_history_copy() -> str:
-    return os.path.join(os.getcwd(), FILENAME_COPY_OF_BROWSING_HISTORY)
+    return construct_full_path(FILENAME_COPY_OF_BROWSING_HISTORY)
+
+
+def construct_full_path(filepath: str) -> str:
+    return os.path.join(os.getcwd(), filepath)
 
 
 def get_filepath_with_toplevel_folder_removed(filepath: str) -> str:
     return filepath.replace(f"{TOPLEVEL_FOLDER}/", "")
 
 
-def parse_out_video_id_if_in_url_format(video_url_or_id: str):
+def parse_out_video_id_if_its_in_url_format(video_url_or_id: str):
     """ Get video id from YouTube url. They have this format:
         https://www.youtube.com/watch?v=dQw4w9WgXcQ, alternatively
         https://youtu.be/dQw4w9WgXcQ?si=TP24yLz9nyVTF_nL&t=90 """
@@ -64,8 +68,8 @@ def contains_identical_videos(lst):
     n = len(lst)
     for i in range(n):
         for k in range(i + 1, n):
-            video_i = parse_out_video_id_if_in_url_format(lst[i])
-            video_k = parse_out_video_id_if_in_url_format(lst[k])
+            video_i = parse_out_video_id_if_its_in_url_format(lst[i])
+            video_k = parse_out_video_id_if_its_in_url_format(lst[k])
             if video_i == video_k:
                 return True
     return False
@@ -107,7 +111,7 @@ def remove_empty_lines_and_comments(lines: list[str]) -> list[str]:
 def convert_incorrect_video_id_formats(video_urls_or_ids: list[str]) -> list[str]:
     video_ids = []
     for video_url_or_id in video_urls_or_ids:
-        video_id = parse_out_video_id_if_in_url_format(video_url_or_id)
+        video_id = parse_out_video_id_if_its_in_url_format(video_url_or_id)
         video_ids.append(video_id)
     return video_ids
 
@@ -149,7 +153,7 @@ def open_transcript(filepath: str, video_id: str) -> str:
 
 def video_exists(filepath: str, video_url_or_id: str) -> bool:
     all_video_ids = read_video_ids_from_default_file(filepath)
-    video_id = parse_out_video_id_if_in_url_format(video_url_or_id)
+    video_id = parse_out_video_id_if_its_in_url_format(video_url_or_id)
     if video_id in all_video_ids:
         return True
     file_destination = construct_video_input_file_destination(filepath)
@@ -171,7 +175,7 @@ def get_name_for_notes(filepath: str) -> str:
 
 def ensure_directory_exists() -> None:
     """ Create folder for 'MY_FILEPATH' if it does not exist """
-    directory = os.path.dirname(GLOBALLY_CONFIGURED_FILEPATH)
+    directory = os.path.dirname(CURRENTLY_SELECTED_SUBFOLDER)
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -185,9 +189,9 @@ def create_subfolder(subfolder: str) -> None:
 
 def initialize_directory():
     ensure_directory_exists()
-    transcripts_subfolder = f"{GLOBALLY_CONFIGURED_FILEPATH}/{FOLDERNAME_TRANSCRIPTS}"
-    ai_summaries_subfolder = f"{GLOBALLY_CONFIGURED_FILEPATH}/{FOLDERNAME_AI_SUMMARIES}"
-    notes_subfolder = f"{GLOBALLY_CONFIGURED_FILEPATH}/{FOLDERNAME_NOTES}"
+    transcripts_subfolder = f"{CURRENTLY_SELECTED_SUBFOLDER}/{FOLDERNAME_TRANSCRIPTS}"
+    ai_summaries_subfolder = f"{CURRENTLY_SELECTED_SUBFOLDER}/{FOLDERNAME_AI_SUMMARIES}"
+    notes_subfolder = f"{CURRENTLY_SELECTED_SUBFOLDER}/{FOLDERNAME_NOTES}"
     create_subfolder(transcripts_subfolder)
     create_subfolder(ai_summaries_subfolder)
     create_subfolder(notes_subfolder)

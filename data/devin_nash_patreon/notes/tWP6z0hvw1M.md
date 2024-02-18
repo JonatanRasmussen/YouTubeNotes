@@ -1,0 +1,17 @@
+[[Devin Nash]]
+https://www.youtube.com/watch?v=tWP6z0hvw1M
+
+**Video Title:** The Rise of OpenAI's Sora
+
+**Key Topics:** OpenAI Sora, AI video models, text-to-video model, realistic video generation
+- OpenAI unveiled Sora, a groundbreaking AI text-to-video model
+- Sora can generate realistic videos up to a minute long with cohesion between frames
+- The model can create videos from text prompts or starting images
+- Sora surpasses previous AI video models in realism and length
+- Sam Altman showcased Sora's capabilities, taking requests from Twitter users
+- The model is unlikely to be open source due to potential misuse concerns
+- Sora operates as a diffusion model, updating noise to form coherent images
+- The technology involves processing massive amounts of data for video generation
+- Sora uses visual patches instead of tokenizing text for video synthesis
+- The future impact includes revolutionizing video editing and potentially changing industries like Minecraft streaming and filmmaking
+- Despite current flaws, advancements in AI technology will likely address limitations over time

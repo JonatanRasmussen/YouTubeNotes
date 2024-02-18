@@ -2,12 +2,12 @@
 
 import os
 from openai import OpenAI
-from global_config import (
-    GLOBALLY_CONFIGURED_FILEPATH,
+from configs import (
+    CURRENTLY_SELECTED_SUBFOLDER,
 )
 from utils import (
     initialize_directory,
-    parse_out_video_id_if_in_url_format,
+    parse_out_video_id_if_its_in_url_format,
     construct_final_notes_output_file_destination,
     write_list_as_file,
     read_ai_summary_from_file,
@@ -18,11 +18,12 @@ from utils import (
 )
 
 
-def build_top_of_notes(filepath: str, video_id: str) -> list[str]:
+def build_top_of_notes(filepath: str, video_id: str, video_title: str) -> list[str]:
     output_file_initial_lines = []
-    title = get_name_for_notes(filepath)
-    formatted_title = f"[[{title}]]"
-    output_file_initial_lines.append(formatted_title)
+    output_file_initial_lines.append(video_title)
+    unofficial_title = get_name_for_notes(filepath)
+    formatted_unofficial_title = f"[[{unofficial_title}]]"
+    output_file_initial_lines.append(formatted_unofficial_title)
     url = create_youtube_url_from_video_id(video_id)
     output_file_initial_lines.append(url)
     output_file_initial_lines.append("")
@@ -39,11 +40,11 @@ def modify_line_breaks(notes: list[str]) -> list[str]:
     return modified_notes
 
 
-def generate_notes(filepath: str, video_url_or_id: str) -> None:
+def generate_notes(filepath: str, video_url_or_id: str, video_title: str) -> str:
     """ Reads list of videos from specified file, then fetches the transcript for each video
         and writes its subtitles to disk as a new file with the video_id as the file name """
-    video_id = parse_out_video_id_if_in_url_format(video_url_or_id)
-    notes = build_top_of_notes(filepath, video_id)
+    video_id = parse_out_video_id_if_its_in_url_format(video_url_or_id)
+    notes = build_top_of_notes(filepath, video_id, video_title)
     if video_exists(filepath, video_url_or_id):
         ai_summary_as_list = read_ai_summary_from_file(filepath, video_id)
         for bullet_point in ai_summary_as_list:
@@ -52,10 +53,13 @@ def generate_notes(filepath: str, video_url_or_id: str) -> None:
         output_destination = construct_final_notes_output_file_destination(filepath, video_id)
         write_list_as_file(output_destination, modified_notes)
         print(f"Notes for video_id {video_id} has been created.")
+        return output_destination
+    return ""
 
 
 if __name__ == "__main__":
     initialize_directory()
-    my_filepath = GLOBALLY_CONFIGURED_FILEPATH
+    my_filepath = CURRENTLY_SELECTED_SUBFOLDER
     my_video_url_or_id = "Krz-WX82gHo"
-    generate_notes(my_filepath, my_video_url_or_id)
+    title = ""
+    generate_notes(my_filepath, my_video_url_or_id, title)

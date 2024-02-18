@@ -22,7 +22,7 @@ devin_nash_patreon = "devin_nash_patreon"
 
 # (Step 2 of 2) INSERT BELOW
 MY_FILEPATH = devin_nash_patreon
-GLOBALLY_CONFIGURED_FILEPATH = f"{TOPLEVEL_FOLDER}/{MY_FILEPATH}"
+CURRENTLY_SELECTED_SUBFOLDER = f"{TOPLEVEL_FOLDER}/{MY_FILEPATH}"
 
 
 

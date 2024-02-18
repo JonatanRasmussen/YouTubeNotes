@@ -1,0 +1,16 @@
+[[Devin Nash]]
+https://www.youtube.com/watch?v=0WhxgCjheNE
+
+**Video Title:** Healthy Living and Online Gaming
+
+**Key Topics:** Coca-Cola, Health advice, Gaming tips, Building character
+- Brother's advice: Avoid soda, prioritize health
+- Personalized health advice: Find what works best for you
+- Start slow with workouts; progress at your own pace
+- Gaming tips: Jarvan IV build, strategy, gameplay commentary
+- Using brute force in gaming: satisfaction in overpowering opponents
+- Itemization strategy in video game battles
+- Combining auto attacks for maximum damage output
+- Utilizing various in-game abilities for optimal gameplay
+- Teamwork in online gaming: frontlining, peeling for allies
+- Personal victory in online gaming battles
