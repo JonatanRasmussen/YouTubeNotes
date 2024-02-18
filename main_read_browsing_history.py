@@ -28,7 +28,7 @@ def main_read_browsing_history(filepath: str) -> None:
         video_id = parse_out_video_id_if_its_in_url_format(url)
         fetch_transcript(filepath, video_id)
         generate_ai_summary(filepath, video_id)
-        output_destination = generate_notes(filepath, video_id)
+        output_destination = generate_notes(filepath, video_id, title)
         if output_destination != "":
             output_fullpath = construct_full_path(output_destination)
             os.startfile(output_fullpath)
