@@ -10,12 +10,12 @@ from configs import (
 from utils import (
     parse_out_video_id_if_its_in_url_format,
     initialize_directory,
-    construct_full_path,
 )
 from fetch_latest_url import fetch_latest_url
 from fetch_transcript import fetch_transcript
 from generate_ai_summary import generate_ai_summary
 from generate_notes import generate_notes
+from generate_obsidian_notes import generate_obsidian_notes
 
 
 def main_read_browsing_history(filepath: str) -> None:
@@ -30,8 +30,7 @@ def main_read_browsing_history(filepath: str) -> None:
         generate_ai_summary(filepath, video_id)
         output_destination = generate_notes(filepath, video_id, title)
         if output_destination != "":
-            output_fullpath = construct_full_path(output_destination)
-            os.startfile(output_fullpath)
+            generate_obsidian_notes(filepath, video_id, True)
 
 
 if __name__ == "__main__":

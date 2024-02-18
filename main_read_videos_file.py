@@ -15,6 +15,7 @@ from utils import (
 from fetch_transcript import fetch_transcript
 from generate_ai_summary import generate_ai_summary
 from generate_notes import generate_notes
+from generate_obsidian_notes import generate_obsidian_notes
 
 
 def main_read_videos_file(filepath: str, videos_filename: str) -> None:
@@ -25,7 +26,9 @@ def main_read_videos_file(filepath: str, videos_filename: str) -> None:
         fetch_transcript(filepath, video_id)
         generate_ai_summary(filepath, video_id)
         video_title = ""
-        generate_notes(filepath, video_id, video_title)
+        output_destination = generate_notes(filepath, video_id, video_title)
+        if output_destination != "":
+            generate_obsidian_notes(filepath, video_id, False)
         print(f"{i+1} of {len(video_urls_or_ids)}: video_id {video_id} processed."+"\n")
 
 

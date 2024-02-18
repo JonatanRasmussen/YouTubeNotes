@@ -10,8 +10,9 @@ from configs import (
     FOLDERNAME_NOTES,
     TOPLEVEL_FOLDER,
     FILEPATH_MAPPING,
-    FILE_CONTAINING_OPENAI_API_KEY,
     CURRENTLY_SELECTED_SUBFOLDER,
+    FILENAME_START_NOTES,
+    FILENAME_START_COLLECTION_OF_NOTES,
 )
 
 
@@ -28,7 +29,27 @@ def construct_ai_summaries_output_file_destination(filepath: str, video_id: str)
 
 
 def construct_final_notes_output_file_destination(filepath: str, video_id: str) -> str:
-    return f"{filepath}/{FOLDERNAME_NOTES}/{video_id}.md"
+    file_name_and_extension = construct_final_notes_output_file_name_and_extension(video_id)
+    return f"{filepath}/{FOLDERNAME_NOTES}/{file_name_and_extension}"
+
+
+def construct_final_notes_output_file_name_and_extension(video_id: str) -> str:
+    return f"{FILENAME_START_NOTES}{video_id}.md"
+
+
+def construct_notes_collection_output_file_name_and_extension(my_filepath: str) -> str:
+    return f"{FILENAME_START_COLLECTION_OF_NOTES}{my_filepath}.md"
+
+
+def construct_obsidian_collection_of_notes_full_path(obsidian_notes_fullpath: str, filepath: str) -> str:
+    my_filepath = get_filepath_with_toplevel_folder_removed(filepath)
+    file_name_and_extension = construct_notes_collection_output_file_name_and_extension(my_filepath)
+    return f"{obsidian_notes_fullpath}/{file_name_and_extension}"
+
+
+def construct_obsidian_notes_full_path(obsidian_notes_fullpath: str, video_id: str) -> str:
+    file_name_and_extension = construct_final_notes_output_file_name_and_extension(video_id)
+    return f"{obsidian_notes_fullpath}/{file_name_and_extension}"
 
 
 def construct_full_file_path_for_browsing_history_copy() -> str:
@@ -73,6 +94,11 @@ def contains_identical_videos(lst):
             if video_i == video_k:
                 return True
     return False
+
+
+def add_line_to_file(filepath: str, new_line_to_be_added: str) -> None:
+    with open(filepath, 'a') as file:
+        file.write(new_line_to_be_added)
 
 
 def read_single_line_from_file(file_destination: str) -> str:

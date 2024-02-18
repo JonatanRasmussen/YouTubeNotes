@@ -1,0 +1,15 @@
+[[Devin Nash]]
+https://www.youtube.com/watch?v=RuGtAboiyZk
+
+**Video Title:** Understanding Business Classifications and Tools
+
+**Key Topics:** Business classifications, community building, product marketing, teaching skills, hard skills vs. soft skills
+- Different classifications of business include community building, product marketing, and expertise in a field.
+- Teaching skills can be divided into soft skills (esoteric) and hard skills (objective).
+- Hard skills like teaching Lightroom and Photoshop are easier to teach and verify compared to soft skills like leadership.
+- Building a community around a product is separate from selling the product itself.
+- Most products can be successfully sold without the need to build a community.
+- Expertise requires insider information and recent experience in the field.
+- Distribution channels are crucial for selling products, especially for hard skills like courses.
+- Focusing on product quality and effective marketing strategies is more important than community building for many businesses.
+- Understanding the differences between community building, product marketing, and expertise is crucial for business planning and success.

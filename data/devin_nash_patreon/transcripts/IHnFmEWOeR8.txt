@@ -1,0 +1,796 @@
+Hyper Light Drifter, a 2D action role-playing
+game, is the result of Alx Preston’s unwavering
+motivation caused by his congenital heart
+disease.
+Congenital heart disease is a general term
+for a range of heart defects that develop
+during pregnancy or birth.
+While some individuals, post-surgery, lead
+relatively normal lives, others require ongoing
+care and medical attention.
+In Alx’s case, his heart had multiple holes
+that needed to be patched up during an open
+heart surgery when he was only about one year
+old.
+Although the surgery saved his life, it left
+him with severe digestive and immune system
+issues, resulting in multiple hospitalizations,
+some of which were near-fatal.
+To stay alive, Alx had to have a pacemaker
+and heart valve installed.
+He takes over a dozen pills daily to maintain
+his health and has to stick to a very strict
+diet.
+Additionally, he sees two cardiologists every
+six months: one for regular checkups and another
+specializing in monitoring his cholesterol
+and pacemaker.
+On top of that, Alx has been diagnosed with
+a genetic mutation that causes numerous other
+health issues.
+It's hardly surprising that he often struggles
+to not feel like “horrible garbage” on
+a daily basis.
+Despite these obstacles, he co-created a highly
+successful video game franchise, which is
+even being adapted into a TV series.
+“I think I have an unnatural amount of motivation
+and I think a lot of that stuff stems from
+the fact that ‘eh, I could die at any moment.’
+Who knows how long I’m really going to live.
+I didn’t even think I’d make it past 30.”
+Alx's condition has always limited the types
+of physical activities he can engage in, which
+led him to spend a lot of time playing video
+games and immersing himself in various other
+media.
+These activities, especially video games,
+offer an escape to entirely different worlds
+where he can temporarily set aside his worries
+and push the boundaries of his imagination.
+Bits and pieces of Hyper Light Drifter have
+been swirling around in Alx's mind since his
+childhood, but it wasn't until his college
+years that he began to express these ideas
+artistically.
+He began painting and experimenting with film
+and animation.
+Initially, he created a lot of work that he
+describes as 'unsatisfying, straight-up bad,'
+but he believes that’s what most art students
+are supposed to do.
+The process of throwing a lot of stuff on
+the walls to see what sticks, what resonates
+with oneself and peers, is essential.
+For Alx, this was a valuable experience, not
+only to hone his artistic skills but also
+to help him define what he actually wanted
+to say with his work moving forward.
+After college, he worked on commercials for
+a while as an illustrator and storyboard artist.
+This period was instrumental in teaching him
+about pitching projects and effectively communicating
+a clear message.
+Eventually, he started going to a monthly
+game jam called Strawberry Jam, hosted in
+coffee shops.
+Here, various media creators would gather
+to mingle and make inspiring indie games,
+purely for the joy of it.
+In early 2012, Alx was hospitalized again
+and it was an exceptionally difficult period.
+He only weighed 90 lbs, was mostly bedridden
+and unable to eat anything but prefabricated
+medical goop through a tube punched in his
+stomach.
+This true waking nightmare did spark a realization:
+he needed to share his creativity with the
+world.
+Previously, he had been very private about
+his art, sharing it only with close friends
+and family.
+But Alx grew tired of keeping his work to
+himself and allowing his health issues to
+hold him back.
+No matter what would happen from now on, he
+was going to push forward and create the video
+game he’s been envisioning since childhood.
+To start things off, Alx drew loose sketches,
+developed rough ideas, and experimented with
+a number of game engines.
+Video games such as 'Mega Man Zero,' 'Zelda:
+A Link to the Past,' and the 'Souls' series
+greatly inspired Alx.
+Some critical elements in those games informed
+a lot of decisions for Hyper Light Drifter’s
+design and atmosphere building.
+However, 'Super Metroid' was the first experience
+of almost pure visual storytelling that captured
+his attention and ended up being deeply inspiring.
+He loved the mystery, the sense of discovery,
+the feeling of being alone in an alien world,
+and its incredible atmosphere and tone.
+In terms of animation, Studio Ghibli films
+demonstrated to him how beautiful animation
+and design can bring a world to life.
+Arguably, Alx's biggest source of inspiration
+has been his medical condition.
+It provides him with a unique perspective
+on life, a perspective that directly influences
+'Hyper Light Drifter' and its narrative.
+“I have a deep need to keep funneling my
+personal nightmares and frustrations into
+my work.
+It keeps me functioning.
+I don’t think I can avoid it.”
+The main character, known simply as The Drifter,
+suffers from a deadly illness for which he
+is desperately seeking a cure, a theme Alx
+is intimately familiar with.
+He decided to make a 2D single-player action
+RPG with a pixel art aesthetic.
+During this time, the group from the monthly
+game jam grew tired of the limited power outlets
+and unreliable Wi-Fi in the coffee shops.
+This led to discussions about renting a space
+for hosting game jams and other artistic events.
+Consequently, Glitch City was founded as a
+community space for indie developers.
+Initially operating out of Alx's garage, the
+venture quickly evolved.
+By early 2013, they had pooled their resources
+to rent a coworking space, with the aim of
+fostering indie game development.
+Before we move on, I’d like to talk about
+this video’s sponsor FÜM.
+FÜM is an award-winning flavored air device
+that helps you break your bad habits.
+Instead of electronics, vapor and harmful
+chemicals, FÜM uses all-natural delicious
+flavors.
+It’s a habit you’re free to enjoy.
+Every FÜM comes with an adjustable airflow
+dial and is designed with moveable parts and
+magnets for fidgeting, giving your fingers
+a lot to do which is helpful for de-stressing
+while breaking your habit.
+It’s very easy to start using your FÜM.
+Simply pull the barrel away from the mouthpiece,
+insert one of the flavored cores and slide
+the wooden barrel back onto the device.
+I tried every single flavor the company offers
+and my personal favorite is White Cranberry.
+All of them were more flavorful than I expected,
+but the White Cranberry tastes especially
+fresh.
+I also recommend the fruity flavor of Orange
+Vanilla, which is easily my second favorite.
+FÜM sent me their Solano model and thanks
+to the perfectly balanced weight, the beautiful
+real wood and its matte black finish, it really
+looks and feels like a premium product.
+It’s also fun to fidget with and helps keep
+my anxiety at bay.
+FÜM’s new product the “Base” launched
+in January.
+It’s a weighted stand to rest your FÜM
+on when not in use, with a magnet inside that
+keeps your FÜM attached and makes it extra
+fun to fidget with.
+Join FÜM in accelerating humanity’s breakup
+from destructive habits by picking up the
+Journey Pack today.
+Head to TryFum.com/THATGUYGLEN or scan the
+QR code and use code THATGUYGLEN to get 10%
+off when you get the Journey Pack today.
+FÜM, the good habit.
+Now back to the video.
+It’s through Glitch City that Alx met programmer
+Beau Blyth.
+Alx quickly noticed Beau’s genius and invited
+him to join Hyper Light Drifter’s development.
+They co-founded Heart Machine, a name inspired
+by the machines that have been vital in keeping
+Alx’s heart alive.
+Working as a duo, they were able to generate
+more ideas and insights, accelerating the
+game’s development.
+They chose the GameMaker engine for two main
+reasons: Beau's extensive experience with
+it from projects like 'Samurai Gunn,' and
+its suitability for creating 2D games.
+A few months into development, they prepared
+a Kickstarter campaign to raise funds needed
+to fully realize their vision for Hyper Light
+Drifter.
+After working out the core mechanics, creating
+graphics for various characters and levels,
+composing a sample soundtrack, and preparing
+a trailer, the duo felt ready to unveil the
+project to the public.
+Alx estimated that $27,000 would be sufficient
+to cover three key aspects.
+First, it would allow them to fairly compensate
+Beau and Rich Vreeland, also known as Disasterpeace,
+who had agreed to compose the soundtrack.
+Second, establish Heart Machine as a real
+game development studio, which takes a fair
+chunk of money and time.
+Third, it would fund the hiring of playtesters
+and the incorporation of community feedback
+to refine the game.
+Originally, they aimed to release the game
+by mid-2014.
+However, these plans changed after the project
+evolved into a highly successful Kickstarter
+campaign.
+The Kickstarter launched in September 2013.
+Remarkably, in less than 24 hours, it not
+only reached the $27,000 goal but also exceeded
+$40,000.
+Things weren’t slowing down either, and
+within days, the campaign had raised over
+$100,000.
+A key factor in its rapid popularity was the
+team's involvement with Glitch City and the
+larger indie game community.
+This connection provided easier access to
+the press, ensuring that news about the Kickstarter
+spread quickly.
+While Alx was immensely grateful for all the
+support, the 30 days of the Kickstarter campaign
+turned out to be some of the busiest of his
+life.
+He quickly had to think of new stretch goals
+as the campaign surpassed the original ones
+within just a few days.
+Furthermore, after his daily work on 'Hyper
+Light Drifter,' he dedicated many hours to
+fostering and maintaining relationships with
+fans and backers.
+He provided daily updates on the game’s
+development throughout the duration of the
+Kickstarter and responded to lots of incoming
+messages.
+As it became apparent that they would receive
+significantly more funding than initially
+asked for, the scope and vision for 'Hyper
+Light Drifter' began to expand.
+To support this larger vision, additional
+developers joined the team.
+Thanks to the network at Glitch City, it wasn’t
+difficult to find reliable partners.
+Teddy Diefenbach, a co-founder of Glitch City,
+joined the team as a programmer and designer,
+even though Teddy was initially focused on
+developing their own game.
+Teddy needed some additional income to sustain
+themselves for a few months so they could
+work out the kinks of their own crowdfunding
+campaign.
+Therefore, on the day the 'Hyper Light Drifter'
+Kickstarter launched, Teddy reached out to
+everyone at Glitch City inquiring about any
+short-term gigs.
+By the time Alx responded, the Kickstarter
+had already gained significant momentum, leading
+Alx to propose that Teddy join Heart Machine.
+Although Teddy had envisioned creating a very
+different type of action RPG, the temptation
+of contributing to the captivating world and
+characters that Alx and Beau had started developing
+was too compelling to resist.
+Casey Hunt, a long time friend of Alx joined
+during the Kickstarter as well and he became
+the cornerstone of conversations about design,
+story and everything else.
+Casey's skills in concepting, world building
+and his carefully considered approach to design
+all contributed to shape the game in many
+ways.
+As mentioned earlier, Richard Vreeland, also
+joined the team to compose the soundtrack.
+Having previously scored 'Fez', Alx felt lucky
+to have him onboard for Hyper Light Drifter.
+Once Alx was done assembling the team, the
+studio counted five full-time employees.
+To celebrate the conclusion of the campaign,
+they organized a livestream on the last day,
+where the entire team discussed their future
+plans.
+It was the perfect activity to start building
+their relationship as a team.
+These five developers, along with some contract
+workers, would spend the next couple of years
+figuring out what a drastically expanded version
+of Hyper Light Drifter would look and play
+like.
+Naturally, this meant that they would not
+meet the original deadline of June 2014.
+After the 30-day campaign, Heart Machine had
+raised over $645,000.
+Although that may sound like a lot, Heart
+Machine still had to stretch every single
+dollar.
+After accounting for Kickstarter's 5% fee,
+Amazon Pay’s 3% cut, and cancellations due
+to banking issues, the studio was left with
+approximately $584,000.
+To maximize these funds, they minimized overhead
+costs as much as possible.
+Being part of Glitch City, where they shared
+office space with other indie developers,
+significantly helped to reduce expenses.
+Regarding salaries, Alx proposed to every
+team member the option of accepting a lower
+wage in exchange for a more favorable revenue
+share.
+Most agreed to this, resulting in a modest
+salary with the potential for substantial
+bonuses in the future.
+Heart Machine also allocated a portion of
+their budget for events like PAX.
+While these events are crucial for generating
+excitement, gaining press coverage, engaging
+with fans, and maintaining team morale, they
+can be quite expensive.
+Setting up a full booth and sending several
+team members to manage it and interact with
+visitors can easily exceed $10,000.
+Additionally, to keep the team motivated and
+provide a fun atmosphere, the studio maintained
+a budget for celebrating milestones.
+Activities such as go-karting, team dinners,
+and similar events provided a welcome break
+and helped keep the team motivated and connected.
+Glitch City proved to be an ideal workplace
+for Heart Machine.
+As Alx put it, “We can ask for advice from
+one another, ask for play testing, thoughts,
+and have long conversations about detailed
+design topics.
+But because it’s not a conventional office
+environment, it’s also possible to just
+not turn up when solitude is needed.
+Sometimes you want to hide in a dark cave
+alone and work, shut everyone else out.
+There are ups and downs, like any situation.”
+During the Kickstarter campaign, the studio
+received multiple offers from publishers.
+However, they chose not to work with any of
+them.
+The funds raised through Kickstarter allowed
+the team to stay independent and retain full
+creative control.
+This independence, on the other hand, came
+with more responsibility and pressure to set
+and meet their own milestones.
+The games event circuit provided an excellent
+framework for this, ensuring that they met
+specific deadlines and had important playable
+segments ready for the public to test.
+About a month after the Kickstarter, the team
+faced its first internal milestone: presenting
+a public demo at MineCon in Orlando.
+The event organizers had invited Alx and his
+team, and they saw it as an excellent opportunity
+to showcase their first public demo and gather
+valuable playtesting data.
+However, most of the developers were still
+exhausted from the Kickstarter so Teddy decided
+to fly out there by themselves.
+On the night before the event, Teddy was still
+assembling a level in their hotel room, working
+until three or four in the morning.
+Teddy then reached out to Alx, who was on
+the West Coast where it was around midnight,
+to request if he could add graphics.
+By the next morning, Alx had transformed Teddy’s
+rudimentary level into a visually stunning
+first demo of Hyper Light Drifter.
+Teddy remembers feeling they made the right
+choice to join Heart Machine.
+The success of their Kickstarter caught the
+attention of YoYo Games, the creators of the
+GameMaker engine.
+As a result, they offered Heart Machine their
+direct support during the game's development.
+This support proved invaluable, as it allowed
+the developers to report priority bugs.
+Their intensive use of the engine, combined
+with constantly pushing it to its limits,
+led them to discover issues that had previously
+gone unnoticed.
+In the early stages of development, Heart
+Machine utilized GameMaker's standard tile-based
+room editor.
+Alx would create giant Photoshop files filled
+with art, and Teddy would then make these
+designs playable.
+However, this workflow had some glaring weaknesses
+that limited the world’s potential.
+The studio didn’t want the world to look
+and feel tile-based.
+It needed to feel natural, unique and lived-in.
+When looking at early prototypes, noticeable
+patterns emerged, with recognizable shapes
+that the team wanted to avoid.
+Furthermore, Alx's art was so strikingly beautiful
+that any compromise which might sacrifice
+even a single pixel was unacceptable.
+Object and enemy scripting was also very difficult
+and tedious to implement.
+As a temporary measure, the developers just
+threw a bunch of enemies all over the place
+to try and make combat interesting.
+Anything more creative would require an outside-the-box
+solution.
+Initially, YoYo Games offered to add features
+to address these issues, but the team chose
+to tackle them on their own.
+Their first approach involved using an exporter
+that integrated Photoshop files, aiming to
+streamline the pipeline workflow, as well
+as facilitate more creative enemy scripting.
+The second iteration of prototypes featured
+more organic shapes, giving levels more of
+a ruined and crumbled look.
+The enemies’ behavior was also refined,
+eliminating the need for players to fight
+large numbers at once.
+However, other issues persisted, especially
+with GameMaker’s room editor.
+Adjusting objects or the layout of a level
+required frequent re-exports, and programmers
+had to manually update elements like hitboxes.
+It was at that point that the devs decided
+to create their own editor.
+Beau came up with an outside-the-box idea
+for a custom editor, which Teddy initially
+shot down.
+That said, Beau went ahead and gave it a shot
+anyway.
+To boil it down, the idea was to build an
+editor within the game itself.
+Unable to extend GameMaker to add their own
+tools and menus, they opted to implement everything
+they needed directly into the game environment,
+where they had complete control.
+When Beau had a prototype of the editor ready,
+the developers could simply click play and
+begin building the world in-game.
+It featured a sketch tool that greatly simplified
+the process of adding terrain.
+Developers could even select specific layers
+to work on.
+Interestingly, they used the shadows layer
+as a space to leave notes for themselves,
+since that layer wouldn’t need final touches
+until the very end of development.
+The editor also included an object system
+that made it possible to easily place Alx’s
+Photoshop assets onto the terrain.
+Certain objects even had multiple variations
+that could be randomized while placing them
+in the game.
+Furthermore, the editor's link system simplified
+the process of connecting objects to other
+elements and triggering events.
+Beau ensured that each object had accurate
+collision detection, which streamlined the
+entire process.
+These features were just a few of the many
+capabilities provided by the custom editor.
+The team could immediately begin playtesting
+their creations by simply placing The Drifter
+into the scene.
+Remarkably, they continued to add features
+to the editor up until one month before the
+game's release.
+Alongside Photoshop and GameMaker, the team
+also utilized Pro Motion for animations and
+software like Premiere, After Effects, and
+Flash.
+Heart Machine made the interesting decision
+to include no text in their game.
+From the start of development, Alx and Beau
+were considering using minimal text and dialogue.
+They made some prototypes that included numbers,
+but barely featured any words.
+However, it wasn't until their Kickstarter
+campaign that the full team committed to creating
+a game completely devoid of numbers and words.
+“I think we all wanted to try something
+a bit different when it came to storytelling.
+It was a huge challenge, but crafting an experience
+told entirely through the visuals and the
+audio was something we agreed early on was
+a worthwhile endeavor to set us apart and
+focus on the more impactful moments and components.”
+Alx's background in animation and visual storytelling
+became essential in this ambitious endeavor
+to keep the game focused on the imagery and
+the environment.
+Needless to say, this approach led to a lot
+of interesting yet frustrating design problems.
+Despite their efforts, in rare instances,
+they found it necessary to compromise and
+include some text.
+For instance, the game displays text in the
+first ten minutes for tutorial purposes.
+The developers wanted to make absolutely sure
+that every player understood basic mechanics
+like healing, which would have been hard to
+convey through level design alone.
+Teddy mentioned that while it most likely
+would have been possible to avoid text during
+the tutorial, it would have required significantly
+more time to develop and implement the right
+ideas.
+Text is also present in the pause menu and
+credits.
+The team rationalized these instances by categorizing
+them as non-diegetic elements: visible to
+the player but doesn’t exist within the
+game's world or is acknowledged by its characters.
+The only instance where text appears within
+the game world itself is on mysterious pillars.
+These were added to provide some lore and
+give the game more depth.
+However, the text on these pillars is not
+in a real language and doesn't relate to the
+main objectives of the game.
+Having close to no text in the game led to
+an extensive iterative process, especially
+for designing the game's shops in terms of
+functionality and appearance.
+An easier yet still complex example is the
+sword upgrades.
+The devs agreed putting a picture of a sword
+on the building’s sign was enough to communicate
+that this is the sword upgrade shop.
+Inside, the player encounters an NPC holding
+a sword, with additional swords displayed
+on the wall, reinforcing the shop's purpose.
+Once you interact with the NPC, the player
+sees an image of themselves holding a sword,
+accompanied by a sword icon.
+While this may seem excessive, Heart Machine
+was determined to ensure that every player
+unmistakably understood where they were and
+what they were doing.
+After all, in Hyper Light Drifter, in-game
+currency is scarce, making each purchase a
+significant decision for players.
+If a player regrets a purchase, that’s on
+the developers and Heart Machine took this
+very seriously.
+Therefore, they spend a lot of time and effort
+figuring out ways to clearly demonstrate each
+upgrade's function and the consequences of
+buying it.
+At first, the team considered implementing
+a test ground for trying out upgrades.
+However, this raised the challenge of communicating
+to players that they were merely testing the
+upgrades, not purchasing them.
+According to Teddy, this approach raised more
+questions than it answered.
+Ultimately, the team decided to attach an
+animation to each upgrade to illustrate its
+effect.
+To familiarize players with the shop's UI
+layout even before they encounter it, the
+studio designed it to mirror the inventory
+menu.
+They employed the same assets and underlying
+code, with only minor adjustments.
+A particularly tricky problem was indicating
+the cost of an item without using numbers.
+The team's solution was to display the price
+as golden squares next to the upgrade.
+These squares also appear in the player's
+money box, which flashes to show the corresponding
+amount of money.
+Another issue was conveying to players that
+they lacked sufficient funds.
+The final iteration there was to have the
+squares flash red and accompany this visual
+cue with a sound effect.
+Although this solution may seem straightforward,
+it took many iterations to make it feel natural.
+Heart Machine also had to get creative when
+it came to communicating the game’s larger
+goals and underlying questions: What is the
+player's purpose in the game?
+Why are they here?
+What are their objectives?
+Where should they go?
+These questions are largely addressed during
+the opening cutscene, where the developers
+emphasize certain visual elements through
+repetition — a dog, diamond-shaped objects,
+four pillars, four towers, and so on.
+The cutscene depicts a diamond splitting into
+four pieces, with the Drifter attempting to
+grab it.
+Following this, the player finds themselves
+in the Drifter’s apartment.
+Here, the developers almost lose control over
+the player, but not before presenting a diagram
+summarizing how to beat the game.
+Interestingly, the team reinforced the diamond
+shapes to such an extent that they eventually
+had to redesign many items to prevent them
+from resembling diamonds; only the main goals
+and objects were allowed to be associated
+with diamonds.
+Hyper Light Drifter’s narrative unfolds
+primarily through visual storytelling, as
+traditional dialogue wasn't an option.
+The game features sprawling levels filled
+with dead bodies and ruins, intriguing NPCs
+and hidden areas, all designed to keep the
+player engaged and curious.
+While making the soundtrack, Rich was heavily
+influenced by composers like Claude Debussy
+and Maurice Ravel.
+He likes to use synth sounds, dedicating a
+lot of time to shaping them to inject them
+with a sense of movement and make them feel
+alive.
+His work on FEZ marked the beginning of his
+journey to make synth sounds more expressive,
+a theme he continued to explore in Hyper Light
+Drifter.
+Rich employed techniques like reverb, distortion,
+noise addition and tape saturation to give
+warmth and texture to the score.
+Significant attention was given to how sounds
+are spatialized in the stereo field, ensuring
+everything has ample room to breath.
+Drawing inspiration from sources beyond music,
+he read Hayao Miyazaki's manga adaption of
+'Nausicaä of the Valley of the Wind' towards
+the end of the project, which helped him maintain
+momentum and complete the score.
+Heart Machine initially planned to release
+the game on five different platforms simultaneously.
+However, they reconsidered this strategy after
+receiving advice from other indie studios,
+like Supergiant Games, advising against it.
+Instead, they chose to launch the game only
+on PC, Mac, and Linux.
+After multiple delays, the team eventually
+set a firm deadline for March 2016.
+It was a terrifying prospect, especially in
+light of Alx’s scheduled heart valve replacement
+in November 2015, which would inevitably leave
+him unable to work for some time.
+The team began playtesting a rough version
+of the entire game in late 2015 with family,
+friends, and fellow developers.
+Subsequently, they also conducted a comprehensive
+QA series with random playtesters just a few
+months prior to the release.
+On the night before the official release,
+everything that could go wrong did go wrong
+for Heart Machine.
+They had issues with their Steam keys, specifically
+those meant for Kickstarter backers.
+Additionally, internet problems made it difficult
+to manage the game's launch on Steam.
+At midnight on March 31st, the internet began
+freaking out and asking why the game’s not
+live yet.
+It wasn't until four or five in the morning
+that they were finally able to launch the
+game.
+The release was met with highly favorable
+reviews from both critics and gamers.
+Hardcore Gamer praised the game in their review,
+stating, “Alx Preston and his team have
+delivered a title that highlights everything
+great about the medium as a whole, it’s
+as simple as that.”
+Alx had accomplished his goal of sharing his
+creativity with the world.
+"The support of the community, the rapid response
+from everyone, the overwhelmingly positive
+feedback has all brought me back from the
+brink of a very difficult time in my life.”
+Hyper Light Drifter’s release was a significant
+stress relief for Alx Preston and the rest
+of the team, but they didn't have much time
+to enjoy their accomplishment.
+For about a month, they were busy fixing bugs
+and optimizing the game for PC.
+After that was done, they began the more challenging
+task of porting the game to consoles.
+This was especially daunting because Beau
+and Teddy had already left the team to pursue
+other projects.
+Consequently, Alx and Eric Melcher, who had
+handled the Mac and Linux ports, were responsible
+for the console versions.
+Fortunately, YoYo Games offered assistance
+in making the game playable on PlayStation
+and Xbox.
+Another unexpected challenge was obtaining
+platform certification, which involved extensive
+paperwork.
+Each region had its own set of rules and limitations.
+Additionally, securing a game rating for each
+region proved costly, amounting to several
+thousand dollars.
+It was a much more complicated experience
+than working with Steam, which gives developers
+a lot more control.
+The successful navigation through these challenges
+was only made possible thanks to the excellent
+representatives at Sony and Microsoft that
+worked closely with Heart Machine.
+Reflecting on the entire development process,
+Alx mentioned that he would have preferred
+to have fewer and simpler Kickstarter rewards
+and tiers.
+The production of physical goods turned out
+to be a nightmare for the team, as it took
+precious time away from working on the game.
+Additionally, he expressed regret over promising
+to port the game to so many platforms.
+Heart Machine had to cancel the WiiU and Vita
+versions, which was a difficult decision that
+led to disappointment both among backers and
+within the team itself.
+On a more positive note, Alx mentioned that
+developing, releasing and porting Hyper Light
+Drifter to consoles, all without a publisher,
+was a great learning experience and taught
+them everything they needed to know for their
+future projects.
+The studio continues to thrive, having released
+'Solar Ash' in December 2021, set in the same
+universe as Hyper Light Drifter.
+As of this video's release, the studio is
+working on 'Hyper Light Breaker', another
+game in the Hyper Light Drifter universe,
+which is slated to be released in early access
+in 2024.
+Unlike the original, Hyper Light Breaker is
+set in a 3D world and will feature both single-player
+and cooperative online multiplayer gameplay.
+Additionally, in March 2019, it was announced
+that a limited animated television series
+based on Hyper Light Drifter is in development.
+Alx Preston, alongside Adi Shankar, known
+for his work on the 'Castlevania' series,
+are currently writing the episodes and developing
+the series' visual style.
+They are focused on blending the game's iconic
+pixel art style with a more traditional anime
+aesthetic.
+Alx couldn't be more grateful for the incredible
+support and feedback his games have received.
+While fan art always brings a smile to his
+face, it's the medical stories from people
+around the world that have deeply touched
+him.
+“It’s been one of the most incredible
+aspects of this whole process.
+To have people willing to share such intense
+experiences with a stranger – one they have
+found enough common ground with to find the
+courage to do so – is stunning.
+I'm always open to hear people's stories,
+and when they're genuine like that - when
+a complete stranger is willing to share those
+secrets and disabilities and what they're
+going through - I understand perfectly where
+they're coming from.
+It reminds me to take a moment outside of
+my own struggles.
+It’s also deeply inspiring for me to know
+that I’ve had any kind of meaningful impact
+or effect on people.
+I can’t ask for much more.”

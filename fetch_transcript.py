@@ -3,9 +3,11 @@
 # pip install youtube-transcript-api
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import VideoUnavailable
+from youtube_transcript_api._errors import TranscriptsDisabled
 from configs import (
     CURRENTLY_SELECTED_SUBFOLDER,
     VIDEO_UNAVAILABLE,
+    SUBTITLES_DISABLED,
 )
 from utils import (
     initialize_directory,
@@ -47,6 +49,8 @@ def obtain_subtitles_via_transcript_object(video_id: str) -> list[str]:
         return subtitle_lst
     except VideoUnavailable:
         return [VIDEO_UNAVAILABLE]
+    except TranscriptsDisabled:
+        return [SUBTITLES_DISABLED]
 
 
 def build_transcript_dict(video_ids: list[str]) -> dict[str,list[str]]:
@@ -70,8 +74,10 @@ def fetch_transcript_for_all(filepath: str) -> None:
     for video_id, subtitles in transcript_dict.items():
         output_destination = construct_transcript_output_file_destination(filepath, video_id)
         write_list_as_file(output_destination, subtitles)
-        if VIDEO_UNAVAILABLE in subtitles:
+        if subtitles == VIDEO_UNAVAILABLE:
             print(f"Error when requesting transcript for video_id {video_id}: {VIDEO_UNAVAILABLE}")
+        if subtitles == SUBTITLES_DISABLED:
+            print(f"Error when requesting transcript for video_id {video_id}: {SUBTITLES_DISABLED}")
     print(f"Done! {len(videos)} transcripts successfully fetched and saved!")
 
 
@@ -81,9 +87,11 @@ def fetch_transcript(filepath: str, video_url_or_id: str) -> None:
         output_destination = construct_transcript_output_file_destination(filepath, video_id)
         if not file_exists(output_destination):
             subtitles = obtain_subtitles_via_transcript_object(video_id)
+            write_list_as_file(output_destination, subtitles)
             if subtitles == VIDEO_UNAVAILABLE:
                 print(f"Error when requesting transcript for video_id {video_id}: {VIDEO_UNAVAILABLE}")
-            write_list_as_file(output_destination, subtitles)
+            if subtitles == SUBTITLES_DISABLED:
+                print(f"Error when requesting transcript for video_id {video_id}: {SUBTITLES_DISABLED}")
             print(f"Transcript of video_id '{video_id}' fetched successfully.")
         else:
             print(f"Transcript of video_id '{video_id}' has previously been fetched.")
