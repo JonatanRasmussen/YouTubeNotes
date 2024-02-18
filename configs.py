@@ -27,10 +27,3 @@ devin_nash_patreon = "devin_nash_patreon"
 # (Step 2 of 2) INSERT BELOW
 MY_FILEPATH = devin_nash_patreon
 CURRENTLY_SELECTED_SUBFOLDER = f"{TOPLEVEL_FOLDER}/{MY_FILEPATH}"
-
-
-
-notes_name_devin_nash_patreon = "Devin Nash"
-FILEPATH_MAPPING = {devin_nash_patreon: notes_name_devin_nash_patreon,
-                    'test_key': 'test_value',
-                    }

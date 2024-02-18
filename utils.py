@@ -9,7 +9,6 @@ from configs import (
     FOLDERNAME_AI_SUMMARIES,
     FOLDERNAME_NOTES,
     TOPLEVEL_FOLDER,
-    FILEPATH_MAPPING,
     CURRENTLY_SELECTED_SUBFOLDER,
     FILENAME_START_NOTES,
     FILENAME_START_COLLECTION_OF_NOTES,
@@ -193,10 +192,8 @@ def read_ai_summary_from_file(filepath: str, video_id: str) -> list[str]:
 
 
 def get_name_for_notes(filepath: str) -> str:
-    no_toplevel = get_filepath_with_toplevel_folder_removed(filepath)
-    if no_toplevel in FILEPATH_MAPPING:
-        return FILEPATH_MAPPING[no_toplevel]
-    return no_toplevel
+    currently_selected_subfolder_name = get_filepath_with_toplevel_folder_removed(filepath)
+    return currently_selected_subfolder_name
 
 
 def ensure_directory_exists() -> None:

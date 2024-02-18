@@ -4,6 +4,7 @@ import os
 from openai import OpenAI
 from configs import (
     CURRENTLY_SELECTED_SUBFOLDER,
+    FILENAME_START_COLLECTION_OF_NOTES,
 )
 from utils import (
     initialize_directory,
@@ -22,7 +23,7 @@ def build_top_of_notes(filepath: str, video_id: str, video_title: str) -> list[s
     output_file_initial_lines = []
     output_file_initial_lines.append(video_title)
     unofficial_title = get_name_for_notes(filepath)
-    formatted_unofficial_title = f"[[{unofficial_title}]]"
+    formatted_unofficial_title = f"[[{FILENAME_START_COLLECTION_OF_NOTES}{unofficial_title}]]"
     output_file_initial_lines.append(formatted_unofficial_title)
     url = create_youtube_url_from_video_id(video_id)
     output_file_initial_lines.append(url)

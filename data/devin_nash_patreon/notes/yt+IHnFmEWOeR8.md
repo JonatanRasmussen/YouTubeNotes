@@ -1,9 +1,8 @@
-A Video Game Creator’s Creative Triumph Over a Deadly Disease - YouTube
-[[Devin Nash]]
-
+[[yt++devin_nash_patreon]]
 https://www.youtube.com/watch?v=IHnFmEWOeR8
 
 **Video Title:** The Inspirational Journey of Alx Preston and Hyper Light Drifter
+
 **Key Topics:** Video game development, Health challenges, Artistic inspiration, Team collaboration, Game design
 - Alx Preston, creator of Hyper Light Drifter, battled congenital heart disease from a young age
 - Despite multiple health challenges and limitations, Alx pursued his passion for video game development
